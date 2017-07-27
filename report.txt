@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------------
+Processing file 'cnn.py'
+ outputting to 'cnn3.py'
+--------------------------------------------------------------------------------
+
+'cnn.py' Line 52
+--------------------------------------------------------------------------------
+
+Added keyword 'logits' to reordered function 'tf.nn.softmax_cross_entropy_with_logits'
+Added keyword 'labels' to reordered function 'tf.nn.softmax_cross_entropy_with_logits'
+
+    Old:     cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(prediction,y) )
+                                                                                            
+    New:     cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(logits=prediction,labels=y) )
+                                                                            ~~~~~~~           ~~~~~~~     
+
+
